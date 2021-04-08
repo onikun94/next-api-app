@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getApi } from "../../lib/api";
 import { useState, useEffect } from "react";
+import Layout from "../../components/layout";
 const FirstPost = () => {
   const [apisa, setApisa] = useState(null);
   useEffect(() => {
@@ -12,7 +13,7 @@ const FirstPost = () => {
     })();
   }, []);
   return (
-    <div>
+    <Layout>
       <Link href="/">
         <a>Back Page</a>
       </Link>
@@ -21,7 +22,7 @@ const FirstPost = () => {
         apisa.map((url) => (
           <div>{url && <img src={url} alt="dog-api" width="300" />}</div>
         ))}
-    </div>
+    </Layout>
   );
 };
 
