@@ -9,7 +9,7 @@ const Home = () => {
       </Head>
       <h1>main page</h1>
       <h2>I will implement various page by using webAPI</h2>
-      <Button />
+      <Button title="Hello" />
       <ul>
         <li>
           <Link href="posts/first-post">
