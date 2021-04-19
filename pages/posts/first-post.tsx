@@ -6,7 +6,6 @@ const FirstPost = () => {
   const [apisa, setApisa] = useState(null);
   useEffect(() => {
     (async () => {
-      console.log("aa");
       const res = await getApi();
       console.log(res);
       setApisa(res);
