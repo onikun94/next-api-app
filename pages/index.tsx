@@ -1,9 +1,10 @@
 import { Button } from "../components/Button";
+import Layout from "../components/layout";
 import Link from "next/link";
 import Head from "next/head";
 const Home = () => {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>HELLO ONIKUN</title>
       </Head>
@@ -17,7 +18,7 @@ const Home = () => {
           </Link>
         </li>
       </ul>
-    </div>
+    </Layout>
   );
 };
 
