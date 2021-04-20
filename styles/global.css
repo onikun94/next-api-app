@@ -25,3 +25,11 @@ img {
   max-width: 100%;
   display: block;
 }
+
+h1 {
+  color: purple;
+}
+
+hr {
+  width: 300px;
+}
